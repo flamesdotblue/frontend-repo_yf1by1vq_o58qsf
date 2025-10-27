@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Neon Commerce",
+    "description": "E-commerce experience with neon aesthetics and micro-interactions.",
+    "tech": ["Next.js", "TypeScript", "Tailwind", "Stripe"],
+    "live": "https://example.com/neon-commerce",
+    "github": "https://github.com/your/neon-commerce",
+    "image": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "title": "Cosmic Dashboard",
+    "description": "Analytics dashboard with immersive 3D charts and smooth motion.",
+    "tech": ["React", "Three.js", "Framer Motion"],
+    "live": "https://example.com/cosmic-dashboard",
+    "github": "https://github.com/your/cosmic-dashboard",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "title": "Aurora Portfolio",
+    "description": "Personal site with aurora gradients and kinetic typography.",
+    "tech": ["Next.js", "Tailwind", "GSAP"],
+    "live": "https://example.com/aurora-portfolio",
+    "github": "https://github.com/your/aurora-portfolio",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "title": "Voxel Studio",
+    "description": "Web-based voxel editor with real-time collaboration.",
+    "tech": ["React", "R3F", "Y.js"],
+    "live": "https://example.com/voxel-studio",
+    "github": "https://github.com/your/voxel-studio",
+    "image": "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 5,
+    "title": "Pulse Fitness",
+    "description": "Mobile-first fitness app with streaks and social challenges.",
+    "tech": ["React", "Expo", "Firebase"],
+    "live": "https://example.com/pulse-fitness",
+    "github": "https://github.com/your/pulse-fitness",
+    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 6,
+    "title": "Hologram Docs",
+    "description": "Developer docs with instant search and holographic accents.",
+    "tech": ["Next.js", "MDX", "Algolia"],
+    "live": "https://example.com/hologram-docs",
+    "github": "https://github.com/your/hologram-docs",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 7,
+    "title": "Nova Notes",
+    "description": "Cross-platform notes with AI summarization.",
+    "tech": ["Electron", "React", "OpenAI"],
+    "live": "https://example.com/nova-notes",
+    "github": "https://github.com/your/nova-notes",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 8,
+    "title": "Spectrum UI",
+    "description": "Component library with color system and motion presets.",
+    "tech": ["React", "Tailwind", "Storybook"],
+    "live": "https://example.com/spectrum-ui",
+    "github": "https://github.com/your/spectrum-ui",
+    "image": "https://images.unsplash.com/photo-1526657782461-9fe13402a841?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 9,
+    "title": "Orbit Travel",
+    "description": "Landing page for a futuristic travel brand.",
+    "tech": ["Next.js", "Framer Motion", "Tailwind"],
+    "live": "https://example.com/orbit-travel",
+    "github": "https://github.com/your/orbit-travel",
+    "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "id": 10,
+    "title": "Quantum Tasks",
+    "description": "Task manager with time-warp views and gamified focus.",
+    "tech": ["React", "Redux", "Framer Motion"],
+    "live": "https://example.com/quantum-tasks",
+    "github": "https://github.com/your/quantum-tasks",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+  }
+]

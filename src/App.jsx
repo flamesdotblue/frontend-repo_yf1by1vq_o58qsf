@@ -1,28 +1,59 @@
-import { useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import PortfolioSections from './components/PortfolioSections';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [current, setCurrent] = useState('home');
+
+  // Observe sections to highlight active link
+  useEffect(() => {
+    const sections = Array.from(document.querySelectorAll('section[id]'));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setCurrent(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-40% 0px -50% 0px', threshold: 0.1 }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+    return () => {
+      document.documentElement.style.scrollBehavior = '';
+    };
+  }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Vibe Coding Platform
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Your AI-powered development environment
-        </p>
-        <div className="text-center">
-          <button
-            onClick={() => setCount(count + 1)}
-            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Count is {count}
-          </button>
-        </div>
-      </div>
+    <div className="min-h-screen bg-white dark:bg-black">
+      <Navbar currentSection={current} />
+      <main>
+        <Hero />
+        <About />
+        <PortfolioSections />
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+function Footer() {
+  return (
+    <footer className="py-10 border-t border-zinc-200/70 dark:border-zinc-800/80">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-zinc-600 dark:text-zinc-400 flex items-center justify-between flex-wrap gap-4">
+        <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p>
+          Built with React, Tailwind, Framer Motion and Spline.
+        </p>
+      </div>
+    </footer>
+  );
+}
